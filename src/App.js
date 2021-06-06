@@ -14,8 +14,8 @@ import { Jumbotron, Button } from 'reactstrap';
 import Cross from './Components/Cross'
 import { button } from 'reactstrap';
 import Reactmenu from "./Components/Reactmenu";
-import {ToastContainer,toast} from "react-toastify";
-import {ListGroupItem,ListGroup} from "reactstrap"
+import { ToastContainer, toast } from "react-toastify";
+import { ListGroupItem, ListGroup } from "reactstrap"
 import {
   BrowserRouter as Router,
   Switch,
@@ -29,7 +29,6 @@ import {
 } from 'reactstrap';
 //import { ListGroup, ListGroupItem } from 'reactstrap';
 
-import Form from './Components/Form'
 //import { Button } from 'reactstrap';
 
 import { makeStyles } from '@material-ui/core/styles';
@@ -52,7 +51,6 @@ import Searchbar from './Components/Searchbar'
 import Example from './Components/Example'
 import VerticalTabs from './Components/Cross'
 
-import Ccards from './Components/WithStyles'
 
 import HideAppBar from './Components/Appbar'
 
@@ -72,90 +70,112 @@ import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 
 
 
-import Aboutus from './Components/Aboutus'
 
 
 import LoginForm from './Components/LoginForm'
 
-function App(){
+import Nirmal from './Components/Nirmal'
 
-  return(
-   <>
-         <hr/>
-      <Searchbar/>
-      <hr/>
+import Kumar from './Components/Kumar'
+
+import ResponsiveC from './Components/ResponsiveC'
 
 
-     <>
 
 
-<Router>
-<h2>We are providing you one of the best platform for BCOM Students </h2>
 
-<ToastContainer/>
-     <Container>
-         <Row>
-           <Col md={4}>
-             <Reactmenu/>
+function App() {
 
-           </Col>
-           <Col md={8}>
-           <Route path="/Home" component={Example} exact/>
-           <Route path="/Add-course" component={Header} exact/>
-           <Route path="/Contact us" component={Cross} exact/>
-           <Route path="/Aboutus" component={Aboutus} exact/>
-           
-           </Col>
-         </Row>
-    </Container>
+  return (
+    <>
+      <hr />
+      <Searchbar />
+      <hr />
 
-       </Router> 
+
       <>
-      
-      </>
+
+
+        <Router>
+          <h2>We are providing you one of the best platform for BCOM Students </h2>
+
+          <ToastContainer />
+          <Container>
+            <Row>
+              <Col md={4}>
+                <Reactmenu />
+
+              </Col>
+              <Col md={8}>
+                <Route path="/Home" component={Example} exact />
+                <Route path="/Add-course" component={Header} exact />
+                <Route path="/Contact us" component={Cross} exact />
+
+              </Col>
+            </Row>
+          </Container>
+          <Kards />
+
+        </Router>
+        <>
+
+        </>
 
       </>
+      <hr />
+
+      <hr />
+      <Ourmission />
+      <hr />
+      <VerticalTabs />
+      <hr />
+
+
+
+      <hr />
+      <Example />
+      <hr />
+
+
+      <hr />
+      <Navbar />
+      <hr />
+      <Header name="Andy flower" />
+      <hr />
+      <Header name="Rashid khan" />
+      <hr />
+      <Header name="R Ashwin" />
+      <hr />
+      <Header name="jofra archer" />
+      <hr />
+      <Header name="Nirmal nice" />
+      <hr />
+      <LoginForm />
+      <hr />
+      <Nirmal />
+      <hr />
+      <Kumar />
+      <hr />
+      <Kumar />
+      <hr />
+      <Kumar />
       <hr/>
+      <Kumar />
+      <hr/>
+      <Kumar />
+      <hr />
+      <Kumar />
+      <hr />
+      <Kumar />
+      <hr/>
+      <Kumar />
 
       <hr/>
-    <Ourmission/>
-    <hr/>
-    <VerticalTabs/>
-    <hr/>
-  
-    <Ccards/>
-    <hr/>
-      <Form/>
-      <hr/>
-
-       <hr/>
-      <Example/>
-      <hr/>
+      <ResponsiveC />
+      <hr />
 
 
-      <hr/>
-      <Navbar/>
-       <hr/>
-       <Header name="Andy flower"/>
-       <hr/>
-       <Header name="Rashid khan"/>
-       <hr/>
-       <Header name="R Ashwin"/>
-       <hr/>
-       <Header name="jofra archer"/>
-       <hr/>
-       <Header name="Nirmal nice"/>
-       <hr/>
-       <Kards/>
-       <hr/>
-       <Aboutus/>
-         <hr/>
-         <LoginForm/>
-           <hr/>
-
-
-
-   </>
+    </>
 
   );
 

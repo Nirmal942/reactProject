@@ -2,14 +2,13 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import {ListGroupItem,ListGroup} from "reactstrap";
 
-
 const Menu = ()=>{
  
     return (
         <>  
         
         <ListGroup  >
-          <Link style={{borderColor:"aqua",padding:"20",width:400}} className ="list-group-item list-group-item-action" tag="a" to="/Home" action>
+          <Link style={{borderColor:"aqua",padding:"20",width:400}} className ="list-group-item list-group-item-action"  tag="a" to="/Home" action>
               HOME</Link>  
               <Link style={{color:"orange",padding:"20",width:400}} className="list-group-item list-group-item-action"  tag="a" to="/Add-course" action>
               ADD COURSE</Link>  
